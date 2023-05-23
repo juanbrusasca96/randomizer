@@ -19,11 +19,19 @@ const router = createBrowserRouter([
     errorElement: <div>error</div>,
   },
   {
-    path: "dotaRandom",
+    path: "/dotaRandom",
     element: <div>
       <NavBar />
       <CardHero />
     </div>,
+  },
+  {
+    path: "*",
+    element: <div>
+      <NavBar />
+      <Card />
+    </div>,
+    errorElement: <div>error</div>,
   },
 ]);
 

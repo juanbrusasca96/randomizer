@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 
 const pages = ['Que hacer', 'Dota random'];
-const links = ['/', 'dotaRandom']
+const links = ['', 'dotaRandom']
 
 function NavBar() {
 
@@ -21,7 +21,7 @@ function NavBar() {
                                 key={page}
                                 sx={{ color: 'white', display: 'block', fontSize: '17px' }}
                             >
-                                <Link to={`${links[i]}`}>{page}</Link>
+                                <Link to={`/${links[i]}`}>{page}</Link>
                             </Button>
                         ))}
                     </Box>

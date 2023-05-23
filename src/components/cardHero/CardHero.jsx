@@ -55,8 +55,6 @@ export default function CardHero() {
         return array;
     }
 
-    console.log(heroesWithMoreWinRate);
-
     useEffect(() => {
         getAllHeroes()
     }, [])
