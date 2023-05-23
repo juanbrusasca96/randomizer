@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <div>
       <NavBar />
-      <Card list={queHacerList} />
+      <Card />
     </div>,
     errorElement: <div>error</div>,
   },
