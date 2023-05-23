@@ -3,11 +3,35 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Card from './components/card/Card';
+import { queHacerList } from './utils/utils';
+import NavBar from './components/navbar/NavBar';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <div>
+      <NavBar />
+      <Card list={queHacerList} />
+    </div>,
+    errorElement: <div>error</div>,
+  },
+  {
+    path: "dotaRandom",
+    element: <div>
+      <NavBar />
+      <div>hola</div>
+    </div>,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} >
+      <App />
+    </RouterProvider>
   </React.StrictMode>
 );
 
