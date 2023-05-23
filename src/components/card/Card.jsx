@@ -31,7 +31,7 @@ export default function Card({ list }) {
                     spinner ? <Grid container justifyContent='center'>
                     <CircularProgress />
                 </Grid> :
-                    <Typography sx={{ fontWeight: 'bold' }}>
+                    <Typography sx={{ fontWeight: 'bold', textAlign:'center' }}>
                         {elegido}
                     </Typography>}
             </Grid>
