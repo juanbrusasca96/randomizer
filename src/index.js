@@ -7,6 +7,7 @@ import { BrowserRouter, RouterProvider, createBrowserRouter } from 'react-router
 import Card from './components/card/Card';
 import { queHacerList } from './utils/utils';
 import NavBar from './components/navbar/NavBar';
+import CardHero from './components/cardHero/CardHero';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
     path: "dotaRandom",
     element: <div>
       <NavBar />
-      <div>hola</div>
+      <CardHero />
     </div>,
   },
 ]);
