@@ -8,6 +8,7 @@ import Card from './components/card/Card';
 import { queHacerList } from './utils/utils';
 import NavBar from './components/navbar/NavBar';
 import CardHero from './components/cardHero/CardHero';
+import LolRandom from './components/lolRandom/LolRandom';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,13 @@ const router = createBrowserRouter([
     </div>,
   },
   {
+    path:"/lolRandom",
+    element:<div>
+      <NavBar/>
+      <LolRandom/>
+    </div>
+  },
+  {
     path: "*",
     element: <div>
       <NavBar />
@@ -37,11 +45,9 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
     <RouterProvider router={router} >
       <App />
     </RouterProvider>
-  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
