@@ -6,8 +6,8 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 
-const pages = ['Que hacer', 'Dota random'];
-const links = ['', 'dotaRandom']
+const pages = ['Que hacer', 'Dota random', 'Lol random'];
+const links = ['', 'dotaRandom', 'lolRandom']
 
 function NavBar() {
 
