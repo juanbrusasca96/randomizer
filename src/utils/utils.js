@@ -12,3 +12,17 @@ export const offLane = ['Abaddon', 'Bristleback', 'Chaos Knight', 'Dark Seer', '
 export const softSupport = ['Ancient Apparition', 'Bane', 'Bounty Hunter', 'Clockwerk', 'Dark Willow', 'Earthshaker', 'Enchantress', 'Grimstroke', 'Gyrocopter', 'Hoodwink', 'Jakiro', 'Keeper of the Light', 'Mirana', 'Phoenix', 'Pugna', 'Rubick', 'Shadow Demon', 'Silencer', 'Skywrath Mage', 'Snapfire', 'Treant Protector', 'Tusk', 'Undying', 'Vengeful Spirit', 'Venomancer']
 
 export const hardSupport = ['Ancient Apparition', 'Bane', 'Crystal Maiden', 'Dark Willow', 'Dazzle', 'Disruptor', 'Enchantress', 'Grimstroke', 'Hoodwink', 'Jakiro', 'Keeper of the Light', 'Lich', 'Ogre Magi', 'Pugna', 'Rubick', 'Shadow Demon', 'Silencer', 'Skywrath Mage', 'Snapfire', 'Treant Protector', 'Undying', 'Vengeful Spirit', 'Venomancer', 'Winter Wyvern', 'Witch Doctor']
+
+export const lolPositions=['Top', 'Support']
+
+export const topChampions=['Illaoi', 'Urgot', 'Camille', 'Shen']
+
+export const suppChampions=['Braum', 'Swain', 'Nautilus', 'Shen']
+
+export function randomizeArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
