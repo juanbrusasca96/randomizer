@@ -1,6 +1,6 @@
 import { Avatar, Box, Button, CircularProgress, Grid, Typography } from '@mui/material'
 import React, { useState } from 'react'
-import { agePossibilities, queHacerList } from '../../utils/utils'
+import { agePossibilities, queHacerList, queHacerListDropActivo } from '../../utils/utils'
 
 export default function Card() {
     const [elegido, setElegido] = useState()
@@ -16,10 +16,19 @@ export default function Card() {
         }, 1000)
     }
 
+    const onClickHandlerDropActivo = () => {
+        setSpinner(true)
+        setTimeout(() => {
+            setElegido(queHacerListDropActivo[Math.floor(Math.random() * queHacerListDropActivo.length)].name)
+            setAge(agePossibilities[Math.floor(Math.random() * agePossibilities.length)])
+            setSpinner(false)
+        }, 1000)
+    }
+
     return (
         <Grid container sx={{ width: '50%', padding: '1%' }}>
-            {queHacerList.map(elem => (
-                <Grid container alignItems='center' sx={{ gap: '3%', margin: '3%' }}>
+            {queHacerList.map((elem, i) => (
+                <Grid key={i} container alignItems='center' sx={{ gap: '2%', margin: '2%' }}>
                     <Avatar src={elem.image} variant="rounded" />
                     <Typography>
                         {elem.name}
@@ -27,8 +36,11 @@ export default function Card() {
                 </Grid>
             ))}
             <Grid container direction='column' sx={{ width: '35%' }}>
-                <Button variant='contained' sx={{ margin: '3%', marginBottom: '10%' }} onClick={onClickHandler}>
+                <Button variant='contained' sx={{ margin: '3%' }} onClick={onClickHandler}>
                     Que hacer
+                </Button>
+                <Button variant='contained' sx={{ margin: '3%' }} onClick={onClickHandlerDropActivo}>
+                    Drop counter activo
                 </Button>
                 {elegido &&
                     spinner ? <Grid container justifyContent='center'>
