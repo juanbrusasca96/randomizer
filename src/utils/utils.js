@@ -17,7 +17,7 @@ export const hardSupport = ['Ancient Apparition', 'Bane', 'Crystal Maiden', 'Dar
 
 export const lolPositions=['Top', 'Support']
 
-export const topChampions=['Camille', 'Poppy']
+export const topChampions=['Camille', 'Illaoi']
 
 export const suppChampions=['Swain', 'Poppy']
 
