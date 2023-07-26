@@ -1,8 +1,11 @@
-export const queHacerList = [{ image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LoL_icon.svg/2048px-LoL_icon.svg.png', name: 'League of Legends' }, { image: 'https://1000marcas.net/wp-content/uploads/2020/02/Dota-2-Logo.png', name: 'DOTA 2' }, { image: 'https://steamuserimages-a.akamaihd.net/ugc/860612455486950246/A1754BD654E7AF9A5B867BC031AF0D155B7DB76C/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false', name: 'Age of Empires II: Definitive Edition' }, { image: 'https://cdn-icons-png.flaticon.com/512/13/13973.png', name: 'Juego con historia' }, { image: 'https://thumbs.dreamstime.com/b/television-icon-vector-illustration-tv-symbol-web-sites-mobile-television-icon-vector-illustration-template-web-sites-155927779.jpg', name: 'Serie' }]
+export const queHacerList = [{ image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LoL_icon.svg/2048px-LoL_icon.svg.png', name: 'League of Legends' }, { image: 'https://cdn-icons-png.flaticon.com/512/13/13973.png', name: 'Juego con historia' }, { image: 'https://thumbs.dreamstime.com/b/television-icon-vector-illustration-tv-symbol-web-sites-mobile-television-icon-vector-illustration-template-web-sites-155927779.jpg', name: 'Serie' }]
 
-export const queHacerListDropActivo = [{ image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LoL_icon.svg/2048px-LoL_icon.svg.png', name: 'League of Legends' }, { image: 'https://1000marcas.net/wp-content/uploads/2020/02/Dota-2-Logo.png', name: 'DOTA 2' }, { image: 'https://steamuserimages-a.akamaihd.net/ugc/860612455486950246/A1754BD654E7AF9A5B867BC031AF0D155B7DB76C/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false', name: 'Age of Empires II: Definitive Edition' }, { image: 'https://cdn-icons-png.flaticon.com/512/13/13973.png', name: 'Juego con historia' }, { image: 'https://thumbs.dreamstime.com/b/television-icon-vector-illustration-tv-symbol-web-sites-mobile-television-icon-vector-illustration-template-web-sites-155927779.jpg', name: 'Serie' }, {name: 'Counter-Strike: Global Offensive'}]
+export const queHacerListDropActivo = [{ image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LoL_icon.svg/2048px-LoL_icon.svg.png', name: 'League of Legends' }, { image: 'https://cdn-icons-png.flaticon.com/512/13/13973.png', name: 'Juego con historia' }, { image: 'https://thumbs.dreamstime.com/b/television-icon-vector-illustration-tv-symbol-web-sites-mobile-television-icon-vector-illustration-template-web-sites-155927779.jpg', name: 'Serie' }, { name: 'Counter-Strike: Global Offensive' }]
 
-export const agePossibilities=['Online', 'Historia']
+const DOTA2 = { image: 'https://1000marcas.net/wp-content/uploads/2020/02/Dota-2-Logo.png', name: 'DOTA 2' }
+const AGE = { image: 'https://steamuserimages-a.akamaihd.net/ugc/860612455486950246/A1754BD654E7AF9A5B867BC031AF0D155B7DB76C/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false', name: 'Age of Empires II: Definitive Edition' }
+
+export const agePossibilities = ['Online', 'Historia']
 
 export function calcularWinRate(pick, win) {
     let winRate = win * 100 / pick
@@ -15,11 +18,11 @@ export const softSupport = ['Ancient Apparition', 'Bane', 'Bounty Hunter', 'Cloc
 
 export const hardSupport = ['Ancient Apparition', 'Bane', 'Crystal Maiden', 'Dark Willow', 'Dazzle', 'Disruptor', 'Enchantress', 'Grimstroke', 'Hoodwink', 'Jakiro', 'Keeper of the Light', 'Lich', 'Ogre Magi', 'Pugna', 'Rubick', 'Shadow Demon', 'Silencer', 'Skywrath Mage', 'Snapfire', 'Treant Protector', 'Undying', 'Vengeful Spirit', 'Venomancer', 'Winter Wyvern', 'Witch Doctor']
 
-export const lolPositions=['Top', 'Support']
+export const lolPositions = ['Top', 'Support']
 
-export const topChampions=['Camille', 'Illaoi', 'Pantheon']
+export const topChampions = ['Camille', 'Illaoi', 'Pantheon']
 
-export const suppChampions=['Swain', 'Poppy', 'Pantheon']
+export const suppChampions = ['Swain', 'Poppy', 'Pantheon']
 
 export function randomizeArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
