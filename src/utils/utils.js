@@ -1,13 +1,13 @@
+const DOTA2 = { image: 'https://cdn-icons-png.flaticon.com/512/871/871366.png', name: 'DOTA 2' }
+const LOL = { image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LoL_icon.svg/2048px-LoL_icon.svg.png', name: 'League of Legends' }
+const JUEGOCONHISTORIA = { image: 'https://cdn-icons-png.flaticon.com/512/5260/5260498.png', name: 'Juego con historia' }
+const SERIE = { image: 'https://cdn-icons-png.flaticon.com/512/4236/4236854.png', name: 'Serie' }
+const AGE = { image: 'https://aoecompanion.com/img/helmet.svg', name: 'Age of Empires II: Definitive Edition' }
+const COUNTER = { name: 'Counter-Strike: Global Offensive' }
+
 export const queHacerList = [LOL, DOTA2, AGE, JUEGOCONHISTORIA, SERIE]
 
 export const queHacerListDropActivo = [LOL, DOTA2, AGE, JUEGOCONHISTORIA, SERIE, COUNTER]
-
-const DOTA2 = { image: 'https://1000marcas.net/wp-content/uploads/2020/02/Dota-2-Logo.png', name: 'DOTA 2' }
-const LOL = { image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LoL_icon.svg/2048px-LoL_icon.svg.png', name: 'League of Legends' }
-const JUEGOCONHISTORIA = { image: 'https://cdn-icons-png.flaticon.com/512/13/13973.png', name: 'Juego con historia' }
-const SERIE = { image: 'https://thumbs.dreamstime.com/b/television-icon-vector-illustration-tv-symbol-web-sites-mobile-television-icon-vector-illustration-template-web-sites-155927779.jpg', name: 'Serie' }
-const AGE = { image: 'https://steamuserimages-a.akamaihd.net/ugc/860612455486950246/A1754BD654E7AF9A5B867BC031AF0D155B7DB76C/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false', name: 'Age of Empires II: Definitive Edition' }
-const COUNTER = { name: 'Counter-Strike: Global Offensive' }
 
 export const agePossibilities = ['Online', 'Historia']
 
