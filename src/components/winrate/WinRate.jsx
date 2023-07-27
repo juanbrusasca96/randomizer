@@ -10,8 +10,8 @@ function LinearProgressWithLabel(props) {
             <Box sx={{ width: '100%', mr: 1 }}>
                 <LinearProgress variant="determinate" {...props} />
             </Box>
-            <Box sx={{ minWidth: 35 }}>
-                <Typography variant="body2" color="text.secondary">{`${props.value}%`}</Typography>
+            <Box sx={{ minWidth: 35, color:'white' }}>
+                <Typography variant="body2">{`${props.value}%`}</Typography>
             </Box>
         </Box>
     );
