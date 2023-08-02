@@ -1,6 +1,6 @@
 import { Avatar, Box, Button, CircularProgress, Grid, Typography } from '@mui/material'
 import React, { useState } from 'react'
-import { agePossibilities, queHacerList, queHacerListDropActivo } from '../../utils/utils'
+import { AGE, JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, JUEGOSPRIMARIOS, JUEGOSSECUNDARIOS, agePossibilities, queHacerList, queHacerListDropActivo } from '../../utils/utils'
 
 export default function Card() {
     const [elegido, setElegido] = useState()
@@ -10,7 +10,14 @@ export default function Card() {
     const onClickHandler = () => {
         setSpinner(true)
         setTimeout(() => {
-            setElegido(queHacerList[Math.floor(Math.random() * queHacerList.length)].name)
+            const random = queHacerList[Math.floor(Math.random() * queHacerList.length)].name
+            if (random === JUEGOONLINEPRIMARIO.name) {
+                setElegido(JUEGOSPRIMARIOS[Math.floor(Math.random() * JUEGOSPRIMARIOS.length)].name)
+            } else if (random === JUEGOONLINESECUNDARIO.name) {
+                setElegido(JUEGOSSECUNDARIOS[Math.floor(Math.random() * JUEGOSSECUNDARIOS.length)].name)
+            } else {
+                setElegido(random)
+            }
             setAge(agePossibilities[Math.floor(Math.random() * agePossibilities.length)])
             setSpinner(false)
         }, 1000)
@@ -19,7 +26,14 @@ export default function Card() {
     const onClickHandlerDropActivo = () => {
         setSpinner(true)
         setTimeout(() => {
-            setElegido(queHacerListDropActivo[Math.floor(Math.random() * queHacerListDropActivo.length)].name)
+            const random = queHacerListDropActivo[Math.floor(Math.random() * queHacerListDropActivo.length)].name
+            if (random === JUEGOONLINEPRIMARIO.name) {
+                setElegido(JUEGOSPRIMARIOS[Math.floor(Math.random() * JUEGOSPRIMARIOS.length)].name)
+            } else if (random === JUEGOONLINESECUNDARIO.name) {
+                setElegido(JUEGOSSECUNDARIOS[Math.floor(Math.random() * JUEGOSSECUNDARIOS.length)].name)
+            } else {
+                setElegido(random)
+            }
             setAge(agePossibilities[Math.floor(Math.random() * agePossibilities.length)])
             setSpinner(false)
         }, 1000)
@@ -47,9 +61,9 @@ export default function Card() {
                     <CircularProgress />
                 </Grid> :
                     <Typography sx={{ fontWeight: 'bold', textAlign: 'center' }}>
-                        {elegido === queHacerList[2].name ? `${elegido}, ${age}` : elegido}
+                        {elegido === AGE.name ? `${elegido}, ${age}` : elegido}
                     </Typography>}
-                    {/* <Typography sx={{ fontWeight: 'bold', textAlign: 'center' }}>
+                {/* <Typography sx={{ fontWeight: 'bold', textAlign: 'center' }}>
                         {elegido}
                     </Typography>} */}
             </Grid>

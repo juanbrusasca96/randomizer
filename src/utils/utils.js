@@ -2,12 +2,18 @@ const DOTA2 = { image: 'https://cdn-icons-png.flaticon.com/512/871/871366.png', 
 const LOL = { image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LoL_icon.svg/2048px-LoL_icon.svg.png', name: 'League of Legends' }
 const JUEGOCONHISTORIA = { image: 'https://cdn-icons-png.flaticon.com/512/5260/5260498.png', name: 'Juego con historia' }
 const SERIE = { image: 'https://cdn-icons-png.flaticon.com/512/4236/4236854.png', name: 'Serie' }
-const AGE = { image: 'https://aoecompanion.com/img/helmet.svg', name: 'Age of Empires II: Definitive Edition' }
+export const AGE = { image: 'https://aoecompanion.com/img/helmet.svg', name: 'Age of Empires II: Definitive Edition' }
 const COUNTER = { name: 'Counter-Strike: Global Offensive' }
 
-export const queHacerList = [LOL, DOTA2, AGE, JUEGOCONHISTORIA, SERIE]
+export const JUEGOONLINEPRIMARIO = { image: 'https://cdn-icons-png.flaticon.com/512/771/771241.png', name: 'Juego online primario' }
+export const JUEGOONLINESECUNDARIO = { image: 'https://cdn-icons-png.flaticon.com/512/5804/5804883.png', name: 'Juego online secundario' }
 
-export const queHacerListDropActivo = [LOL, DOTA2, AGE, JUEGOCONHISTORIA, SERIE, COUNTER]
+export const JUEGOSPRIMARIOS = [DOTA2]
+export const JUEGOSSECUNDARIOS = [AGE, LOL]
+
+export const queHacerList = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, JUEGOCONHISTORIA, SERIE]
+
+export const queHacerListDropActivo = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, JUEGOCONHISTORIA, SERIE, COUNTER]
 
 export const agePossibilities = ['Online', 'Historia']
 
@@ -26,7 +32,7 @@ export const lolPositions = ['Top', 'Support']
 
 export const topChampions = ['Camille', 'Illaoi', 'Urgot']
 
-export const suppChampions = ['Swain', 'Poppy', 'Pantheon']
+export const suppChampions = ['Braum', 'Taric', 'Pantheon']
 
 export function randomizeArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
