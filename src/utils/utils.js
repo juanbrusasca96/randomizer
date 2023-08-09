@@ -30,9 +30,9 @@ export const hardSupport = ['Ancient Apparition', 'Bane', 'Crystal Maiden', 'Dar
 
 export const lolPositions = ['Top', 'Support']
 
-export const topChampions = ['Camille', 'Illaoi', 'Urgot']
+export const topChampions = ['Illaoi', 'Poppy']
 
-export const suppChampions = ['Braum', 'Taric', 'Pantheon']
+export const suppChampions = ['Braum', 'Poppy']
 
 export function randomizeArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
