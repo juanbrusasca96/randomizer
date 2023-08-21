@@ -22,7 +22,7 @@ export function calcularWinRate(pick, win) {
     return winRate.toFixed(2)
 }
 
-export const offLane = ['Abaddon', 'Bristleback', 'Chaos Knight', 'Dark Seer', 'Dawnbreaker', 'Death Prophet', 'Doom', 'Dragon Knight', 'Elder Titan', 'Kunkka', 'Magnus', 'Mars', 'Necrophos', 'Night Stalker', 'Ogre Magi', 'Omniknight', 'Primal Beast', 'Razor', 'Slardar', 'Tidehunter', 'Timbersaw', 'Underlord', 'Viper', 'Wraith King']
+export const offLane = ['Abaddon', 'Bristleback', 'Chaos Knight', 'Dark Seer', 'Dawnbreaker', 'Death Prophet', 'Doom', 'Dragon Knight', 'Elder Titan', 'Kunkka', 'Magnus', 'Mars', 'Necrophos', 'Night Stalker', 'Ogre Magi', 'Omniknight', 'Primal Beast', 'Razor', 'Slardar', 'Tidehunter', 'Timbersaw', 'Underlord', 'Viper']
 
 export const softSupport = ['Ancient Apparition', 'Bane', 'Bounty Hunter', 'Clockwerk', 'Dark Willow', 'Earthshaker', 'Enchantress', 'Grimstroke', 'Gyrocopter', 'Hoodwink', 'Jakiro', 'Keeper of the Light', 'Mirana', 'Phoenix', 'Pugna', 'Rubick', 'Shadow Demon', 'Silencer', 'Skywrath Mage', 'Snapfire', 'Treant Protector', 'Tusk', 'Undying', 'Vengeful Spirit', 'Venomancer']
 
