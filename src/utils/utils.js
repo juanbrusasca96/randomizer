@@ -4,6 +4,8 @@ const JUEGOCONHISTORIA = { image: 'https://cdn-icons-png.flaticon.com/512/5260/5
 const SERIE = { image: 'https://cdn-icons-png.flaticon.com/512/4236/4236854.png', name: 'Serie' }
 export const AGE = { image: 'https://aoecompanion.com/img/helmet.svg', name: 'Age of Empires II: Definitive Edition' }
 const COUNTER = { name: 'Counter-Strike: Global Offensive' }
+const PODCAST = { image: 'https://www.pngitem.com/pimgs/m/97-972731_podcast-podcasting-icon-hd-png-download.png', name: 'Podcast' }
+const PROGRAMACION = { image: 'https://e7.pngegg.com/pngimages/73/928/png-clipart-web-development-logo-computer-programming-design-trademark-logo.png', name: 'Programación' }
 
 export const JUEGOONLINEPRIMARIO = { image: 'https://cdn-icons-png.flaticon.com/512/771/771241.png', name: 'Juego online primario' }
 export const JUEGOONLINESECUNDARIO = { image: 'https://cdn-icons-png.flaticon.com/512/5804/5804883.png', name: 'Juego online secundario' }
@@ -11,9 +13,9 @@ export const JUEGOONLINESECUNDARIO = { image: 'https://cdn-icons-png.flaticon.co
 export const JUEGOSPRIMARIOS = [DOTA2]
 export const JUEGOSSECUNDARIOS = [AGE, LOL]
 
-export const queHacerList = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, JUEGOCONHISTORIA, SERIE]
+export const queHacerList = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, JUEGOCONHISTORIA, SERIE, PODCAST, PROGRAMACION]
 
-export const queHacerListDropActivo = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, JUEGOCONHISTORIA, SERIE, COUNTER]
+export const queHacerListDropActivo = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, JUEGOCONHISTORIA, SERIE, PODCAST, PROGRAMACION, COUNTER]
 
 export const agePossibilities = ['Online', 'Historia']
 
