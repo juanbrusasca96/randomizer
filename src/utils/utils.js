@@ -4,7 +4,7 @@ const JUEGOCONHISTORIA = { image: 'https://cdn-icons-png.flaticon.com/512/5260/5
 const SERIE = { image: 'https://cdn-icons-png.flaticon.com/512/4236/4236854.png', name: 'Serie' }
 export const AGE = { image: 'https://aoecompanion.com/img/helmet.svg', name: 'Age of Empires II: Definitive Edition' }
 const COUNTER = { name: 'Counter-Strike: Global Offensive' }
-const PODCAST = { image: 'https://cdn-icons-png.flaticon.com/128/2368/2368447.png', name: 'Podcast' }
+const PODCAST = { image: 'https://cdn-icons-png.flaticon.com/128/10277/10277343.png', name: 'Podcast' }
 const PROGRAMACION = { image: 'https://cdn-icons-png.flaticon.com/128/1197/1197409.png', name: 'Programación' }
 
 export const JUEGOONLINEPRIMARIO = { image: 'https://cdn-icons-png.flaticon.com/512/771/771241.png', name: 'Juego online primario' }
