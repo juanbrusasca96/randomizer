@@ -11,6 +11,7 @@ export default function Card() {
         setSpinner(true)
         setTimeout(() => {
             const random = queHacerList[Math.floor(Math.random() * queHacerList.length)].name
+            console.log(random);
             if (random === JUEGOONLINEPRIMARIO.name) {
                 setElegido(JUEGOSPRIMARIOS[Math.floor(Math.random() * JUEGOSPRIMARIOS.length)].name)
             } else if (random === JUEGOONLINESECUNDARIO.name) {
@@ -29,6 +30,7 @@ export default function Card() {
         setSpinner(true)
         setTimeout(() => {
             const random = queHacerListDropActivo[Math.floor(Math.random() * queHacerListDropActivo.length)].name
+            console.log(random);
             if (random === JUEGOONLINEPRIMARIO.name) {
                 setElegido(JUEGOSPRIMARIOS[Math.floor(Math.random() * JUEGOSPRIMARIOS.length)].name)
             } else if (random === JUEGOONLINESECUNDARIO.name) {
