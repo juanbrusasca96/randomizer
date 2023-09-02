@@ -9,13 +9,15 @@ const PROGRAMACION = { image: 'https://cdn-icons-png.flaticon.com/128/1197/11974
 
 export const JUEGOONLINEPRIMARIO = { image: 'https://cdn-icons-png.flaticon.com/512/771/771241.png', name: 'Juego online primario' }
 export const JUEGOONLINESECUNDARIO = { image: 'https://cdn-icons-png.flaticon.com/512/5804/5804883.png', name: 'Juego online secundario' }
+export const ESTUDIO = { image: 'https://cdn-icons-png.flaticon.com/128/11509/11509813.png', name: 'Estudio' }
 
 export const JUEGOSPRIMARIOS = [DOTA2]
 export const JUEGOSSECUNDARIOS = [AGE, LOL]
+export const COSASESTUDIO = [PODCAST, PROGRAMACION]
 
-export const queHacerList = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, JUEGOCONHISTORIA, SERIE, PODCAST, PROGRAMACION]
+export const queHacerList = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, JUEGOCONHISTORIA, SERIE, ESTUDIO]
 
-export const queHacerListDropActivo = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, JUEGOCONHISTORIA, SERIE, PODCAST, PROGRAMACION, COUNTER]
+export const queHacerListDropActivo = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, JUEGOCONHISTORIA, SERIE, ESTUDIO, COUNTER]
 
 export const agePossibilities = ['Online', 'Historia']
 
