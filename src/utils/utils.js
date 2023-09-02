@@ -7,17 +7,19 @@ const COUNTER = { name: 'Counter-Strike: Global Offensive' }
 const PODCAST = { image: 'https://cdn-icons-png.flaticon.com/128/2368/2368393.png', name: 'Podcast' }
 const PROGRAMACION = { image: 'https://cdn-icons-png.flaticon.com/128/1197/1197409.png', name: 'Programación' }
 
+export const HISTORIA = {image: 'https://cdn-icons-png.flaticon.com/128/2682/2682065.png', name: 'Historia'}
 export const JUEGOONLINEPRIMARIO = { image: 'https://cdn-icons-png.flaticon.com/512/771/771241.png', name: 'Juego online primario' }
 export const JUEGOONLINESECUNDARIO = { image: 'https://cdn-icons-png.flaticon.com/512/5804/5804883.png', name: 'Juego online secundario' }
 export const ESTUDIO = { image: 'https://cdn-icons-png.flaticon.com/128/11509/11509813.png', name: 'Estudio' }
 
+export const COSASCONHISTORIA = [JUEGOCONHISTORIA, SERIE]
 export const JUEGOSPRIMARIOS = [DOTA2]
 export const JUEGOSSECUNDARIOS = [AGE, LOL]
 export const COSASESTUDIO = [PODCAST, PROGRAMACION]
 
-export const queHacerList = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, JUEGOCONHISTORIA, SERIE, ESTUDIO]
+export const queHacerList = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, HISTORIA, ESTUDIO]
 
-export const queHacerListDropActivo = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, JUEGOCONHISTORIA, SERIE, ESTUDIO, COUNTER]
+export const queHacerListDropActivo = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, HISTORIA, ESTUDIO, COUNTER]
 
 export const agePossibilities = ['Online', 'Historia']
 

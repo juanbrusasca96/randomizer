@@ -1,6 +1,6 @@
 import { Avatar, Box, Button, CircularProgress, Grid, Typography } from '@mui/material'
 import React, { useState } from 'react'
-import { AGE, JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, JUEGOSPRIMARIOS, JUEGOSSECUNDARIOS, ESTUDIO, COSASESTUDIO, agePossibilities, queHacerList, queHacerListDropActivo } from '../../utils/utils'
+import { AGE, JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, JUEGOSPRIMARIOS, JUEGOSSECUNDARIOS, ESTUDIO, COSASESTUDIO, agePossibilities, queHacerList, queHacerListDropActivo, HISTORIA, COSASCONHISTORIA } from '../../utils/utils'
 
 export default function Card() {
     const [elegido, setElegido] = useState()
@@ -18,6 +18,8 @@ export default function Card() {
                 setElegido(JUEGOSSECUNDARIOS[Math.floor(Math.random() * JUEGOSSECUNDARIOS.length)].name)
             } else if (random === ESTUDIO.name) {
                 setElegido(COSASESTUDIO[Math.floor(Math.random() * COSASESTUDIO.length)].name)
+            } else if (random === HISTORIA.name) {
+                setElegido(COSASCONHISTORIA[Math.floor(Math.random() * COSASCONHISTORIA.length)].name)
             } else {
                 setElegido(random)
             }
@@ -37,6 +39,8 @@ export default function Card() {
                 setElegido(JUEGOSSECUNDARIOS[Math.floor(Math.random() * JUEGOSSECUNDARIOS.length)].name)
             } else if (random === ESTUDIO.name) {
                 setElegido(COSASESTUDIO[Math.floor(Math.random() * COSASESTUDIO.length)].name)
+            } else if (random === HISTORIA.name) {
+                setElegido(COSASCONHISTORIA[Math.floor(Math.random() * COSASCONHISTORIA.length)].name)
             } else {
                 setElegido(random)
             }
