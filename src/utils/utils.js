@@ -3,7 +3,7 @@ const LOL = { image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/
 const JUEGOCONHISTORIA = { image: 'https://cdn-icons-png.flaticon.com/512/5260/5260498.png', name: 'Juego con historia' }
 const SERIE = { image: 'https://cdn-icons-png.flaticon.com/512/4236/4236854.png', name: 'Serie' }
 export const AGE = { image: 'https://aoecompanion.com/img/helmet.svg', name: 'Age of Empires II: Definitive Edition' }
-const COUNTER = { name: 'Counter-Strike: Global Offensive' }
+export const COUNTER = { name: 'Counter-Strike: Global Offensive' }
 const PODCAST = { image: 'https://cdn-icons-png.flaticon.com/128/2368/2368393.png', name: 'Podcast' }
 const PROGRAMACION = { image: 'https://cdn-icons-png.flaticon.com/128/1197/1197409.png', name: 'Programación' }
 
@@ -13,8 +13,8 @@ export const JUEGOONLINESECUNDARIO = { image: 'https://cdn-icons-png.flaticon.co
 export const ESTUDIO = { image: 'https://cdn-icons-png.flaticon.com/128/11509/11509813.png', name: 'Estudio' }
 
 export const COSASCONHISTORIA = [JUEGOCONHISTORIA, SERIE]
-export const JUEGOSPRIMARIOS = [DOTA2]
-export const JUEGOSSECUNDARIOS = [AGE, LOL]
+export const JUEGOSPRIMARIOS = [LOL]
+export const JUEGOSSECUNDARIOS = [DOTA2, AGE]
 export const COSASESTUDIO = [PODCAST, PROGRAMACION]
 
 export const queHacerList = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, HISTORIA, ESTUDIO]
@@ -22,6 +22,27 @@ export const queHacerList = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, HISTORI
 export const queHacerListDropActivo = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, HISTORIA, ESTUDIO, COUNTER]
 
 export const agePossibilities = ['Online', 'Historia']
+
+export const weightPercentages = {
+    JUEGOONLINEPRIMARIO: 50,
+    JUEGOONLINESECUNDARIO: 20,
+    HISTORIA: 20, 
+    ESTUDIO: 10
+  };
+
+export const weightPercentagesDropActivo = {
+    JUEGOONLINEPRIMARIO: 40,
+    JUEGOONLINESECUNDARIO: 15,
+    HISTORIA: 15,
+    ESTUDIO: 5,
+    COUNTER: 25
+    };
+  
+  // Calcula el peso total
+export const totalWeight = (weightPercentages) => {
+    return Object.values(weightPercentages).reduce((acc, cur) => acc + cur, 0);
+    };
+  
 
 export function calcularWinRate(pick, win) {
     let winRate = win * 100 / pick
