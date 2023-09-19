@@ -24,6 +24,7 @@ function NavBar() {
                                 <Link to={`/${links[i]}`}>{page}</Link>
                             </Button>
                         ))}
+                        v1.0
                     </Box>
                 </Toolbar>
             </Container>
