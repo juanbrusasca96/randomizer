@@ -24,18 +24,18 @@ export const queHacerListDropActivo = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARI
 export const agePossibilities = ['Online', 'Historia']
 
 export const weightPercentages = {
-    JUEGOONLINEPRIMARIO: 50,
-    JUEGOONLINESECUNDARIO: 20,
-    HISTORIA: 20, 
-    ESTUDIO: 10
+    JUEGOONLINEPRIMARIO: 60,
+    JUEGOONLINESECUNDARIO: 16,
+    HISTORIA: 16, 
+    ESTUDIO: 8
   };
 
 export const weightPercentagesDropActivo = {
-    JUEGOONLINEPRIMARIO: 40,
-    JUEGOONLINESECUNDARIO: 15,
-    HISTORIA: 15,
-    ESTUDIO: 5,
-    COUNTER: 25
+    JUEGOONLINEPRIMARIO: 60,
+    JUEGOONLINESECUNDARIO: 8,
+    HISTORIA: 8,
+    ESTUDIO: 4,
+    COUNTER: 20
     };
   
   // Calcula el peso total
