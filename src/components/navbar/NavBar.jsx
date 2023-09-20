@@ -24,7 +24,7 @@ function NavBar() {
                                 <Link to={`/${links[i]}`}>{page}</Link>
                             </Button>
                         ))}
-                        v1.1 cambio roles lol
+                        v1.2 cambio roles lol
                     </Box>
                 </Toolbar>
             </Container>
