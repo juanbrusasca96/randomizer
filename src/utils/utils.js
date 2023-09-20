@@ -6,6 +6,7 @@ export const AGE = { image: 'https://aoecompanion.com/img/helmet.svg', name: 'Ag
 export const COUNTER = { name: 'Counter-Strike: Global Offensive' }
 const PODCAST = { image: 'https://cdn-icons-png.flaticon.com/128/2368/2368393.png', name: 'Podcast' }
 const PROGRAMACION = { image: 'https://cdn-icons-png.flaticon.com/128/1197/1197409.png', name: 'Programación' }
+const LEER = {name: 'Leer'}
 
 export const HISTORIA = {image: 'https://cdn-icons-png.flaticon.com/128/2682/2682065.png', name: 'Historia'}
 export const JUEGOONLINEPRIMARIO = { image: 'https://cdn-icons-png.flaticon.com/512/771/771241.png', name: 'Juego online primario' }
@@ -15,7 +16,7 @@ export const ESTUDIO = { image: 'https://cdn-icons-png.flaticon.com/128/11509/11
 export const COSASCONHISTORIA = [JUEGOCONHISTORIA, SERIE]
 export const JUEGOSPRIMARIOS = [LOL]
 export const JUEGOSSECUNDARIOS = [DOTA2, AGE]
-export const COSASESTUDIO = [PODCAST, PROGRAMACION]
+export const COSASESTUDIO = [PODCAST, PROGRAMACION, LEER]
 
 export const queHacerList = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, HISTORIA, ESTUDIO]
 

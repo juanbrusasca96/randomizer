@@ -24,7 +24,7 @@ function NavBar() {
                                 <Link to={`/${links[i]}`}>{page}</Link>
                             </Button>
                         ))}
-                        v1.0
+                        v1.1 agregado de leer a estudio
                     </Box>
                 </Toolbar>
             </Container>
