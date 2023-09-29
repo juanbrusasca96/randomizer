@@ -24,7 +24,7 @@ function NavBar() {
                                 <Link to={`/${links[i]}`}>{page}</Link>
                             </Button>
                         ))}
-                        v2.0 agregado de FIFA
+                        v2.1 agregado de youtube finanzas
                     </Box>
                 </Toolbar>
             </Container>
