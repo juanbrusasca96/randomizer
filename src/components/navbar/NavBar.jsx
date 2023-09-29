@@ -24,7 +24,7 @@ function NavBar() {
                                 <Link to={`/${links[i]}`}>{page}</Link>
                             </Button>
                         ))}
-                        v1.5 cambio campeones lol
+                        v2.0 agregado de FIFA
                     </Box>
                 </Toolbar>
             </Container>

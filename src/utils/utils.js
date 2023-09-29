@@ -1,5 +1,6 @@
 const DOTA2 = { image: 'https://cdn-icons-png.flaticon.com/512/871/871366.png', name: 'DOTA 2' }
 const LOL = { image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LoL_icon.svg/2048px-LoL_icon.svg.png', name: 'League of Legends' }
+const FIFA = { name: 'FIFA' }
 const JUEGOCONHISTORIA = { image: 'https://cdn-icons-png.flaticon.com/512/5260/5260498.png', name: 'Juego con historia' }
 const SERIE = { image: 'https://cdn-icons-png.flaticon.com/512/4236/4236854.png', name: 'Serie' }
 export const AGE = { image: 'https://aoecompanion.com/img/helmet.svg', name: 'Age of Empires II: Definitive Edition' }
@@ -14,13 +15,13 @@ export const JUEGOONLINESECUNDARIO = { image: 'https://cdn-icons-png.flaticon.co
 export const ESTUDIO = { image: 'https://cdn-icons-png.flaticon.com/128/11509/11509813.png', name: 'Estudio' }
 
 export const COSASCONHISTORIA = [JUEGOCONHISTORIA, SERIE]
-export const JUEGOSPRIMARIOS = [LOL]
+export const JUEGOSPRIMARIOS = [LOL, FIFA]
 export const JUEGOSSECUNDARIOS = [DOTA2, AGE]
 export const COSASESTUDIO = [PODCAST, PROGRAMACION, LEER]
 
 export const queHacerList = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, HISTORIA, ESTUDIO]
 
-export const queHacerListDropActivo = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, HISTORIA, ESTUDIO, COUNTER]
+export const queHacerListDropActivo = [...queHacerList, COUNTER]
 
 export const agePossibilities = ['Online', 'Historia']
 
