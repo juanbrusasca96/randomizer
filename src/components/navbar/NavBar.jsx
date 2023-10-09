@@ -24,7 +24,7 @@ function NavBar() {
                                 <Link to={`/${links[i]}`}>{page}</Link>
                             </Button>
                         ))}
-                        v2.1 agregado de youtube finanzas
+                        v2.2 cambios en array cosas estudio
                     </Box>
                 </Toolbar>
             </Container>
