@@ -24,7 +24,7 @@ function NavBar() {
                                 <Link to={`/${links[i]}`}>{page}</Link>
                             </Button>
                         ))}
-                        v2.2 cambios en array cosas estudio
+                        v2.3 cambios en porcentajes
                     </Box>
                 </Toolbar>
             </Container>

@@ -28,16 +28,16 @@ export const agePossibilities = ['Online', 'Historia']
 
 export const weightPercentages = {
     JUEGOONLINEPRIMARIO: 60,
-    JUEGOONLINESECUNDARIO: 16,
-    HISTORIA: 16, 
-    ESTUDIO: 8
+    JUEGOONLINESECUNDARIO: 20,
+    HISTORIA: 20, 
+    // ESTUDIO: 8
   };
 
 export const weightPercentagesDropActivo = {
     JUEGOONLINEPRIMARIO: 60,
-    JUEGOONLINESECUNDARIO: 8,
-    HISTORIA: 8,
-    ESTUDIO: 4,
+    JUEGOONLINESECUNDARIO: 10,
+    HISTORIA: 10,
+    // ESTUDIO: 4,
     COUNTER: 20
     };
   
