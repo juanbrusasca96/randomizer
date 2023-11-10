@@ -11,32 +11,34 @@ const LEER = {name: 'Leer'}
 const YOUTUBEFINANZAS = { name: 'Youtube finanzas' }
 
 export const HISTORIA = {image: 'https://cdn-icons-png.flaticon.com/128/2682/2682065.png', name: 'Historia'}
-export const JUEGOONLINEPRIMARIO = { image: 'https://cdn-icons-png.flaticon.com/512/771/771241.png', name: 'Juego online primario' }
-export const JUEGOONLINESECUNDARIO = { image: 'https://cdn-icons-png.flaticon.com/512/5804/5804883.png', name: 'Juego online secundario' }
-export const ESTUDIO = { image: 'https://cdn-icons-png.flaticon.com/128/11509/11509813.png', name: 'Estudio' }
+export const JUEGOONLINEPRIMARIO = { image: 'https://cdn-icons-png.flaticon.com/512/771/771241.png', name: 'Juego algo que tenga ganas' }
+// export const JUEGOONLINESECUNDARIO = { image: 'https://cdn-icons-png.flaticon.com/512/5804/5804883.png', name: 'Juego online secundario' }
+// export const ESTUDIO = { image: 'https://cdn-icons-png.flaticon.com/128/11509/11509813.png', name: 'Estudio' }
 
 export const COSASCONHISTORIA = [JUEGOCONHISTORIA, SERIE]
-export const JUEGOSPRIMARIOS = [LOL, FIFA]
+// export const JUEGOSPRIMARIOS = [LOL, FIFA]
+export const JUEGOSPRIMARIOS = [JUEGOONLINEPRIMARIO]
 export const JUEGOSSECUNDARIOS = [DOTA2, AGE]
 export const COSASESTUDIO = [PODCAST, YOUTUBEFINANZAS]
 
-export const queHacerList = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, HISTORIA, ESTUDIO]
+// export const queHacerList = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, HISTORIA, ESTUDIO]
+export const queHacerList = [JUEGOONLINEPRIMARIO, HISTORIA]
 
 export const queHacerListDropActivo = [...queHacerList, COUNTER]
 
 export const agePossibilities = ['Online', 'Historia']
 
 export const weightPercentages = {
-    JUEGOONLINEPRIMARIO: 60,
-    JUEGOONLINESECUNDARIO: 20,
-    HISTORIA: 20, 
+    JUEGOONLINEPRIMARIO: 70,
+    // JUEGOONLINESECUNDARIO: 20,
+    HISTORIA: 30, 
     // ESTUDIO: 8
   };
 
 export const weightPercentagesDropActivo = {
-    JUEGOONLINEPRIMARIO: 60,
-    JUEGOONLINESECUNDARIO: 10,
-    HISTORIA: 10,
+    JUEGOONLINEPRIMARIO: 65,
+    // JUEGOONLINESECUNDARIO: 10,
+    HISTORIA: 15,
     // ESTUDIO: 4,
     COUNTER: 20
     };
