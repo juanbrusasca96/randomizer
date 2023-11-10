@@ -24,7 +24,7 @@ function NavBar() {
                                 <Link to={`/${links[i]}`}>{page}</Link>
                             </Button>
                         ))}
-                        v3.0 cambios, agregado de selects y eliminacion de juegos secundarios y estudio
+                        v3.1 agregado nuevamente de estudio
                     </Box>
                 </Toolbar>
             </Container>
