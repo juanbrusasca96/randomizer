@@ -24,7 +24,7 @@ function NavBar() {
                                 <Link to={`/${links[i]}`}>{page}</Link>
                             </Button>
                         ))}
-                        v3.1 agregado nuevamente de estudio
+                        v3.2 eliminacion de podcast
                     </Box>
                 </Toolbar>
             </Container>
