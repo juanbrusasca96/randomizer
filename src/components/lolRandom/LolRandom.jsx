@@ -44,7 +44,7 @@ export default function LolRandom() {
                         {elegido}
                     </Typography>}
                 <Button variant='contained' sx={{ margin: '8%' }} onClick={() => onCLickHandlerChampion('top')}>
-                    Top
+                    Mid
                 </Button>
                 <Button variant='contained' sx={{ margin: '8%' }} onClick={() => onCLickHandlerChampion('sup')}>
                     Support

@@ -24,7 +24,7 @@ function NavBar() {
                                 <Link to={`/${links[i]}`}>{page}</Link>
                             </Button>
                         ))}
-                        v3.2 eliminacion de podcast
+                        v3.3 cambio de campeones
                     </Box>
                 </Toolbar>
             </Container>
