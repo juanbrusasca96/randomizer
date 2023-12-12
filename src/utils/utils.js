@@ -64,7 +64,7 @@ export const lolPositions = ['Mid', 'Support']
 
 export const topChampions = ['Xerath', 'Velkoz']
 
-export const suppChampions = ['Nami', 'Milio']
+export const suppChampions = ['Nami', 'Seraphine']
 
 export function randomizeArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
