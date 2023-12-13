@@ -29,16 +29,16 @@ export const queHacerListDropActivo = [...queHacerList, COUNTER]
 export const agePossibilities = ['Online', 'Historia']
 
 export const weightPercentages = {
-    JUEGOONLINEPRIMARIO: 65,
+    JUEGOONLINEPRIMARIO: 70,
     // JUEGOONLINESECUNDARIO: 20,
-    HISTORIA: 25, 
+    HISTORIA: 30, 
     // ESTUDIO: 10
   };
 
 export const weightPercentagesDropActivo = {
     JUEGOONLINEPRIMARIO: 60,
     // JUEGOONLINESECUNDARIO: 10,
-    HISTORIA: 15,
+    HISTORIA: 20,
     // ESTUDIO: 5,
     COUNTER: 20
     };
