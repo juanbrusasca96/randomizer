@@ -24,7 +24,7 @@ function NavBar() {
                                 <Link to={`/${links[i]}`}>{page}</Link>
                             </Button>
                         ))}
-                        v3.4 cambio de campeones
+                        v3.5 saco youtube finanzas
                     </Box>
                 </Toolbar>
             </Container>

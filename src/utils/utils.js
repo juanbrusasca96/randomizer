@@ -22,7 +22,7 @@ export const JUEGOSSECUNDARIOS = [DOTA2, AGE]
 export const COSASESTUDIO = [YOUTUBEFINANZAS]
 
 // export const queHacerList = [JUEGOONLINEPRIMARIO, JUEGOONLINESECUNDARIO, HISTORIA, ESTUDIO]
-export const queHacerList = [JUEGOONLINEPRIMARIO, HISTORIA, ESTUDIO]
+export const queHacerList = [JUEGOONLINEPRIMARIO, HISTORIA]
 
 export const queHacerListDropActivo = [...queHacerList, COUNTER]
 
@@ -32,14 +32,14 @@ export const weightPercentages = {
     JUEGOONLINEPRIMARIO: 65,
     // JUEGOONLINESECUNDARIO: 20,
     HISTORIA: 25, 
-    ESTUDIO: 10
+    // ESTUDIO: 10
   };
 
 export const weightPercentagesDropActivo = {
     JUEGOONLINEPRIMARIO: 60,
     // JUEGOONLINESECUNDARIO: 10,
     HISTORIA: 15,
-    ESTUDIO: 5,
+    // ESTUDIO: 5,
     COUNTER: 20
     };
   
