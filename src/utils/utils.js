@@ -60,7 +60,7 @@ export const softSupport = ['Ancient Apparition', 'Bane', 'Bounty Hunter', 'Cloc
 
 export const hardSupport = ['Ancient Apparition', 'Bane', 'Crystal Maiden', 'Dark Willow', 'Dazzle', 'Disruptor', 'Enchantress', 'Grimstroke', 'Hoodwink', 'Jakiro', 'Keeper of the Light', 'Lich', 'Ogre Magi', 'Pugna', 'Rubick', 'Shadow Demon', 'Silencer', 'Skywrath Mage', 'Snapfire', 'Treant Protector', 'Undying', 'Vengeful Spirit', 'Venomancer', 'Winter Wyvern', 'Witch Doctor']
 
-export const lolPositions = ['Mid', 'Support']
+export const lolPositions = ['Top', 'Support']
 
 export const topChampions = ['Xerath', 'Velkoz']
 

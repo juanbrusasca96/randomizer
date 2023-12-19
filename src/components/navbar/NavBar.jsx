@@ -24,7 +24,7 @@ function NavBar() {
                                 <Link to={`/${links[i]}`}>{page}</Link>
                             </Button>
                         ))}
-                        v3.5 saco youtube finanzas
+                        v3.6 cambio random posiciones
                     </Box>
                 </Toolbar>
             </Container>
